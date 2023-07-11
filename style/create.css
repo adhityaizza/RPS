@@ -1,0 +1,60 @@
+.hero{
+    background-color: #e7e7e7;
+    height: 250px;
+}
+
+.card {
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+.navigation {
+    width: 150px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.navigation li {
+    margin-bottom: 10px;
+}
+  
+.navigation li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+  
+.active {
+    background-color: #ccc;
+}
+
+.bottom{
+    margin-bottom: 5px;
+}
+
+.bg{
+    background-color: #7b777c;
+}
+
+.bg-collapse{
+    margin: 6% 3%;
+}
+
+.form-floating{
+    margin-bottom: 20px;
+}
+
+.container{
+    margin-bottom: 10%;
+}
