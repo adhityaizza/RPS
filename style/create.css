@@ -1,6 +1,10 @@
 .hero{
     background-color: #e7e7e7;
-    height: 250px;
+    height: 150px;
+}
+
+.hero h1{
+    padding: 50px;
 }
 
 .card {
@@ -44,7 +48,7 @@
 }
 
 .bg{
-    background-color: #7b777c;
+    background-color: #9b9d97;
 }
 
 .bg-collapse{
@@ -58,3 +62,20 @@
 .container{
     margin-bottom: 10%;
 }
+
+.bold {
+    font-weight: bold;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .color {
+    color: red;
+  }
+  
+  .background {
+    background-color: yellow;
+  }
+  
