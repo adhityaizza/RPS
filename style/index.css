@@ -1,21 +1,28 @@
 .sideNav{
     list-style: none;
     margin-top: 10px;
+    background-color: #f2f2f2;
+    margin-top: 0;
+    
+    
+}
+
+.dropdown-menu{
+    width: 250px;
+}
+
+.sideNav button{
+    width: 250px;
+    margin-top: 5px;
 }
 
 .sideNav li{
-    margin: 5px;
-    padding: 10px;
-    background-color: #d9d9d9;
+    list-style: none;
 }
 
 .purple{
     background-color: purple;
     color: white;
-}
-
-.pas{
-    width: 20%;
 }
 
 .section{

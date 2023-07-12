@@ -1,366 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <title>RPS</title>
-    <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
     <nav class="navbar purple">
-        <div class="container-fluid" style="margin: auto 100px;">
-          <a class="navbar-brand"><img src="asset/logo-brand.png" style="width: 100px;"></a>
-          <form class="d-flex" role="search">
-            <button type="button" class="btn btn-light">Logout</button>
-          </form>
-        </div>
-      </nav>
+      <div class="container-fluid" style="margin: auto 100px">
+        <a class="navbar-brand"
+          ><img src="asset/logo-brand.png" style="width: 100px"
+        /></a>
+        <form class="d-flex" role="search">
+          <a href="pages/login.html"
+            ><button type="button" class="btn btn-light">Logout</button></a
+          >
+        </form>
+      </div>
+    </nav>
 
     <div class="row">
-        <div class="col-2">
-            <ul class="sideNav">
-                <li>RPS 2023</li>
-                <li>RPS 2023</li>
-                <li>RPS 2023</li>
-                <li>RPS 2023</li>
+      <div class="col-2 sideNav">
+        <div class="profil text-center" style="margin-top: 50px">
+          <img
+            src="asset/foto-profil.png"
+            class="rounded-circle"
+            style="height: 150px"
+          />
+          <div style="margin: 20px">
+            <p>Jhon Doe <br />02| 240786 |01</p>
+          </div>
+          <div class="sideMenu text-start">
+            <ul>
+              <li>
+                <a href="pages/create.html" class="link"
+                  ><button type="button" class="btn purple">create</button></a
+                >
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    RPS 2023
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">pemrograman Web</a></li>
+                    <li><a class="dropdown-item" href="#">Perancangan Web</a></li>
+                    <li><a class="dropdown-item" href="#">Logika Informatika</a></li>
+                    <li><a class="dropdown-item" href="#">Basis Data</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    RPS 2022
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">pemrograman Web</a></li>
+                    <li><a class="dropdown-item" href="#">Perancangan Web</a></li>
+                    <li><a class="dropdown-item" href="#">Logika Informatika</a></li>
+                    <li><a class="dropdown-item" href="#">Basis Data</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    RPS 2021
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">pemrograman Web</a></li>
+                    <li><a class="dropdown-item" href="#">Perancangan Web</a></li>
+                    <li><a class="dropdown-item" href="#">Logika Informatika</a></li>
+                    <li><a class="dropdown-item" href="#">Basis Data</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    RPS 2020
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">pemrograman Web</a></li>
+                    <li><a class="dropdown-item" href="#">Perancangan Web</a></li>
+                    <li><a class="dropdown-item" href="#">Logika Informatika</a></li>
+                    <li><a class="dropdown-item" href="#">Basis Data</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="link"
+                  ><button type="button" class="btn purple">Panduan</button></a
+                >
+              </li>
             </ul>
-        </div>
-        <div class="col-10">
-            <div class="row section">
-                <div class="col-12">
-                    <a href="pages/create.html" class="link"><button type="button" class="btn purple pas col-3">create</button></a>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            <p class="card-text">Ilmu Komunikasi</p>
-                            <p class="card-text">D3 Teknik Informatika</p>
-                        </div>
-                        <img src="asset/nakiri.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex justify-content-center">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                View RPS
-                              </button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            <p class="card-text">Ilmu Komunikasi</p>
-                            <p class="card-text">D3 Teknik Informatika</p>
-                        </div>
-                        <img src="asset/nakiri.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex justify-content-center">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                View RPS
-                              </button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            <p class="card-text">Ilmu Komunikasi</p>
-                            <p class="card-text">D3 Teknik Informatika</p>
-                        </div>
-                        <img src="asset/nakiri.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex justify-content-center">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                View RPS
-                              </button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                            <p class="card-text">Ilmu Komunikasi</p>
-                            <p class="card-text">D3 Teknik Informatika</p>
-                        </div>
-                        <img src="asset/nakiri.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex justify-content-center">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                View RPS
-                              </button>
-                        </div>
-                      </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-xl text-center">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Perancangan Web</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div id="printThis" class="text-center">
-                <h2><b>RENCANA PEMBELAJARAN SEMESTER (RPS)</b></h2>
-                <hr class="top">
-                <p class="textSmall">FM-PJM-011/Rev.00/25 Jan 2018</p>
-                <img class="logo" src="asset/logoamikom.png">
-                <hr>
-                <h3><b>MATA KULIAH: PERANCANGAN WEBSITE (DT105)</b></h3>
-                <h3><b>Program Studi: Teknik Informatika</b></h3>
-                <table class="table table-bordered">
-                  <tr>
-                    <td>Nomor</td>
-                    <td>Tgl. Berlaku Mulai</td>
-                    <td>Tgl. Disusun</td>
-                    <td>Revisi</td>
-                  </tr>
-                  <tr>
-                    <td>RPS-D3TI-XXX</td>
-                    <td>Juli 2023</td>
-                    <td>Januari 2023</td>
-                    <td>00</td>
-                  </tr>
-                  <tr>
-                    <td colspan="4"> </td>
-                  </tr>
-                  <tr>
-                    <td><p>Disetujui oleh,</p><p>Dekan Ilmu Komputer</p></td>
-                    <td><p>Diperiksa oleh,</p><p>Kaprodi Teknik Informatika</p></td>
-                    <td><p>Disusun oleh,</p></td>
-                    <td><p>Dikendalikan oleh,</p><p>Sekertaris Ilmu Informatika</p></td>
-                  </tr>
-                  <tr>
-                    <td><img src="asset/ttd.png"><br><b><u>Jhon Doe, M.Kom</u></b><p>NIK. 19302465</p></td>
-                    <td><img src="asset/ttd.png"><br><b><u>Jhon Doe, M.Kom</u></b><p>NIK. 19302465</p></td>
-                    <td><img src="asset/ttd.png"><br><b><u>Jhon Doe, M.Kom</u></b><p>NIK. 19302465</p></td>
-                    <td><img src="asset/ttd.png"><br><b><u>Jhon Doe, M.Kom</u></b><p>NIK. 19302465</p></td>
-                  </tr>
-                </table>
-                <h2><b>UNIVERSITAS AMIKOM YOGYAKARTA</b></h2>
-                <h2><b>YOGYAKARTA</b></h2>
-                <h2><b>2023</b></h2>
-
-                <table class="table table-bordered fs-6 text" style="margin-top: 100px;">
-                    <tr>
-                        <td rowspan="2"><img class="logo-small" src="asset/logoamikom.png"></td>
-                        <td rowspan="2" colspan="2">
-                            <p ><b>MATA KULIAH: PERANCANGAN WEBSITE (DT105)</b></p>
-                            <p><b>Program Studi: Teknik Informatika</b></p>
-                            <p><b>MATAKULIAH PERANCANGAN WEB I</b></p>
-                            <p><b>(DT105)</b></p>
-                        <td class="text-end">
-                            <p>Nomor</p>
-                            <p>TGL Disusun</p>
-                            <p>Revisi</p>
-                            
-                        </td>
-                        <td class="text-start">
-                            <p>: RPS-D3TI-XXX</p>
-                            <p>: Januari 2023</p>
-                            <p>: 00</p>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-end"><p>Halaman</p></td>
-                        <td class="text-start"><p>: Hal 2 dari 19</p></td>
-                    </tr>
-                </table>
-
-                <div class="container fs-6">
-                    <ol class="text-start list-bg">
-                        <li><b>Identitas</b></li>
-                        <table class="table table-bordered fs-6 text" style="margin-top: 5px;">
-                            <tr>
-                                <td>Program Studi</td>
-                                <td>Teknik Informatika</td>
-                                <td>Semester</td>
-                                <td colspan="5">Genap(2)</td>
-                            </tr>
-                            <tr>
-                                <td>Nama & Koden Mata Kuliah</td>
-                                <td>Perancangan Web 1 | DT105</td>
-                                <td>Bobot SKS</td>
-                                <td colspan="5">4 SKS (2 Teori & 2 Praktikum)</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3">Detail Presentase Penilaian</td>
-                                <td rowspan="3">
-                                    <ul class="none-bg">
-                                        <li>Presensi</li>
-                                        <li>Ujian Mid Semester</li>
-                                        <li>Ujian Akhir Semester</li>
-                                        <li>Tugas Teori</li>
-                                        <li>Tugas Praktik</li>
-                                        <li>Responsi</li>
-                                    </ul>
-                                </td>
-                                <td>Dosen <br> pengampu</td>
-                                <td colspan="5"><p>Jhon Doe</p> <p>NIK. 190302315</p></td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Kualifikasi Nilai</td>
-                                <td> >80% </td>
-                                <td>≥60 % 80≤</td>
-                                <td>≥40 % 60≤</td>
-                                <td>≥20 % 40≤</td>
-                                <td> <20 </td>
-                            </tr>
-                            <tr>
-                                <td>A</td>
-                                <td>B</td>
-                                <td>C</td>
-                                <td>D</td>
-                                <td>E</td>
-                            </tr>
-                        </table>
-
-                        <li><b>Gambaran Umum</b></li>
-                            <ol class="roman none-bg outside">
-                                <li>Perkuliahan ini diselenggarakan 14 kali pertemuan secara teori dan 14 kali pertemuan secara praktik. Ujian Tengah Semester dan Ujian Akhir Semester dilakukan secara sinkronus menggunakan Zoom atau Google Meet dan Asinkronus menggunakan LMS</li>
-                                <li>Mata kuliah ini membahas mengenai bagaimana merancang web, teknologi web serta perancangan web II termasuk di dalamnya, yaitu HTML, CSS, PHP, Front-end framework dan Back-end framework. Pokok pembahasan mata kuliah ini adalah implementasi bahasa pemrograman HTML, CSS, PHP, dan Database untuk membangun sebuah Web secara Native maupun menggunakan Framework.</li>
-                                <li>Matakuliah ini merupakan matakuliah konsentrasi., sehingga setelah menyelesaikan matakuliah ini diharapkan dapat menjadi Junior web developer</li>
-                            </ol>
-
-                        <li><b>Capaian Pembelajaran</b></li>
-                            <ol class="roman none-bg outside">
-                                <li>Mampu menjelaskan definisi perancangan web 2, serta mampu mengimplementasikan dasar-dasar php.</li>
-                                <li>Mampu mengimplementasikan Array dalam php, Percabangan dan perulangan menggunakan Bahasa pemrograman PHP.</li>
-                                <li>Mampu mengimplementasikan konsep OOP (Inheritance, Override, Overload, Encapsulasi)</li>
-                                <li>Mampu mengimplementasikan konsep MVC (Model, View, Controller).</li>
-                                <li>Mampu membuat sebuah web dinamis dengan framework Codeigniter.</li>
-                            </ol>
-
-                        <li><b>Prasyarat dan Pengetahuan Awal <i>(Prior Knowlage)</i></b></li>
-                            Matakuliah ini dapat ditempuh dengan syarat sudah menempuh matakuliah perancangan web I. Sebelum mempelajari perancangan web II, mahasiswa diharapkan menguasai HTML, CSS, Javascript terlebih dahulu. Dalam perancangan web II terkait DOM Html dan penggunaan CSS serta Javascript.
-                        
-                        <li><b>Unit-Unit Pembelajaran secara Spesifik</b></li>
-                        <table class="table table-bordered fs-6 text">
-                            <tr class="table-info">
-                                <td>Kemampuan Akhir yang Diharapkan</td>
-                                <td>Indikator</td>
-                                <td>Bahan Kajian</td>
-                                <td>Metode Pembelajaran</td>
-                                <td>Waktu</td>
-                                <td>Metode Penilaian</td>
-                                <td>Bahan Ajar</td>
-                            </tr>
-                            <tr>
-                                <td>Menjelaskan konsep dasar website</td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Dapat menjelaskan perbedaan web statis dan web dinamis Dapat menjelaskan perbedaan web statis dan web dinamis</li>
-                                        <li>Dapat memberikan contoh web statis dan web dinamis</li>
-                                        <li>Dapat menjelaskan perbedaan natif programing dan framework programing</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Kontrak belajar 1 semester</li>
-                                        <li>Konsep dasar web</li>
-                                    </ul>
-                                </td>
-                                <td>Ceramah, Diskusi,Tanya jawab</td>
-                                <td>Minggu ke-1</td>
-                                <td>Keaktivan mahasiswa</td>
-                                <td>PPT Teori</td>
-                            </tr>
-                            <tr>
-                                <td>Menjelaskan konsep dasar website</td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Dapat menjelaskan perbedaan web statis dan web dinamis Dapat menjelaskan perbedaan web statis dan web dinamis</li>
-                                        <li>Dapat memberikan contoh web statis dan web dinamis</li>
-                                        <li>Dapat menjelaskan perbedaan natif programing dan framework programing</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Kontrak belajar 1 semester</li>
-                                        <li>Konsep dasar web</li>
-                                    </ul>
-                                </td>
-                                <td>Ceramah, Diskusi,Tanya jawab</td>
-                                <td>Minggu ke-1</td>
-                                <td>Keaktivan mahasiswa</td>
-                                <td>PPT Teori</td>
-                            </tr>
-                            <tr>
-                                <td>Menjelaskan konsep dasar website</td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Dapat menjelaskan perbedaan web statis dan web dinamis Dapat menjelaskan perbedaan web statis dan web dinamis</li>
-                                        <li>Dapat memberikan contoh web statis dan web dinamis</li>
-                                        <li>Dapat menjelaskan perbedaan natif programing dan framework programing</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Kontrak belajar 1 semester</li>
-                                        <li>Konsep dasar web</li>
-                                    </ul>
-                                </td>
-                                <td>Ceramah, Diskusi,Tanya jawab</td>
-                                <td>Minggu ke-1</td>
-                                <td>Keaktivan mahasiswa</td>
-                                <td>PPT Teori</td>
-                            </tr>
-                            <tr>
-                                <td>Menjelaskan konsep dasar website</td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Dapat menjelaskan perbedaan web statis dan web dinamis Dapat menjelaskan perbedaan web statis dan web dinamis</li>
-                                        <li>Dapat memberikan contoh web statis dan web dinamis</li>
-                                        <li>Dapat menjelaskan perbedaan natif programing dan framework programing</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Kontrak belajar 1 semester</li>
-                                        <li>Konsep dasar web</li>
-                                    </ul>
-                                </td>
-                                <td>Ceramah, Diskusi,Tanya jawab</td>
-                                <td>Minggu ke-1</td>
-                                <td>Keaktivan mahasiswa</td>
-                                <td>PPT Teori</td>
-                            </tr>
-                            <tr>
-                                <td>Menjelaskan konsep dasar website</td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Dapat menjelaskan perbedaan web statis dan web dinamis Dapat menjelaskan perbedaan web statis dan web dinamis</li>
-                                        <li>Dapat memberikan contoh web statis dan web dinamis</li>
-                                        <li>Dapat menjelaskan perbedaan natif programing dan framework programing</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="none-bg">
-                                        <li>Kontrak belajar 1 semester</li>
-                                        <li>Konsep dasar web</li>
-                                    </ul>
-                                </td>
-                                <td>Ceramah, Diskusi,Tanya jawab</td>
-                                <td>Minggu ke-1</td>
-                                <td>Keaktivan mahasiswa</td>
-                                <td>PPT Teori</td>
-                            </tr>
-                            
-                        </table>
-                    </ol>
-                </div>
-            </div>
-            </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-warning" id="btnPrint">Print</button>
-              </div>
           </div>
         </div>
       </div>
-      
+      <div class="col-10">
+        <div class="row section">
+          <div class="col-12"></div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-header">
+                <p class="card-text">Ilmu Komunikasi</p>
+                <p class="card-text">D3 Teknik Informatika</p>
+              </div>
+              <img src="asset/nakiri.jpg" class="card-img-top" alt="..." />
+              <div class="card-body d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View RPS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable modal-xl text-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Perancangan Web
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="printThis" class="text-center">
+              <h2><b>RENCANA PEMBELAJARAN SEMESTER (RPS)</b></h2>
+              <hr class="top" />
+              <p class="textSmall">FM-PJM-011/Rev.00/25 Jan 2018</p>
+              <img class="logo" src="asset/logoamikom.png" />
+              <hr />
+              <h3><b>MATA KULIAH: PERANCANGAN WEBSITE (DT105)</b></h3>
+              <h3><b>Program Studi: Teknik Informatika</b></h3>
+              <table class="table table-bordered">
+                <tr>
+                  <td>Nomor</td>
+                  <td>Tgl. Berlaku Mulai</td>
+                  <td>Tgl. Disusun</td>
+                  <td>Revisi</td>
+                </tr>
+                <tr>
+                  <td>RPS-D3TI-XXX</td>
+                  <td>Juli 2023</td>
+                  <td>Januari 2023</td>
+                  <td>00</td>
+                </tr>
+                <tr>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Disetujui oleh,</p>
+                    <p>Dekan Ilmu Komputer</p>
+                  </td>
+                  <td>
+                    <p>Diperiksa oleh,</p>
+                    <p>Kaprodi Teknik Informatika</p>
+                  </td>
+                  <td><p>Disusun oleh,</p></td>
+                  <td>
+                    <p>Dikendalikan oleh,</p>
+                    <p>Sekertaris Ilmu Informatika</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="asset/ttd.png" /><br /><b
+                      ><u>Jhon Doe, M.Kom</u></b
+                    >
+                    <p>NIK. 19302465</p>
+                  </td>
+                  <td>
+                    <img src="asset/ttd.png" /><br /><b
+                      ><u>Jhon Doe, M.Kom</u></b
+                    >
+                    <p>NIK. 19302465</p>
+                  </td>
+                  <td>
+                    <img src="asset/ttd.png" /><br /><b
+                      ><u>Jhon Doe, M.Kom</u></b
+                    >
+                    <p>NIK. 19302465</p>
+                  </td>
+                  <td>
+                    <img src="asset/ttd.png" /><br /><b
+                      ><u>Jhon Doe, M.Kom</u></b
+                    >
+                    <p>NIK. 19302465</p>
+                  </td>
+                </tr>
+              </table>
+              <h2><b>UNIVERSITAS AMIKOM YOGYAKARTA</b></h2>
+              <h2><b>YOGYAKARTA</b></h2>
+              <h2><b>2023</b></h2>
+
+              <table
+                class="table table-bordered fs-6 text"
+                style="margin-top: 100px"
+              >
+                <tr>
+                  <td rowspan="2">
+                    <img class="logo-small" src="asset/logoamikom.png" />
+                  </td>
+                  <td rowspan="2" colspan="2">
+                    <p><b>MATA KULIAH: PERANCANGAN WEBSITE (DT105)</b></p>
+                    <p><b>Program Studi: Teknik Informatika</b></p>
+                    <p><b>MATAKULIAH PERANCANGAN WEB I</b></p>
+                    <p><b>(DT105)</b></p>
+                  </td>
+
+                  <td class="text-end">
+                    <p>Nomor</p>
+                    <p>TGL Disusun</p>
+                    <p>Revisi</p>
+                  </td>
+                  <td class="text-start">
+                    <p>: RPS-D3TI-XXX</p>
+                    <p>: Januari 2023</p>
+                    <p>: 00</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-end"><p>Halaman</p></td>
+                  <td class="text-start"><p>: Hal 2 dari 19</p></td>
+                </tr>
+              </table>
+
+              <div class="container fs-6">
+                <ol class="text-start list-bg">
+                  <li><b>Identitas</b></li>
+                  <table
+                    class="table table-bordered fs-6 text"
+                    style="margin-top: 5px"
+                  >
+                    <tr>
+                      <td>Program Studi</td>
+                      <td>Teknik Informatika</td>
+                      <td>Semester</td>
+                      <td colspan="5">Genap(2)</td>
+                    </tr>
+                    <tr>
+                      <td>Nama & Koden Mata Kuliah</td>
+                      <td>Perancangan Web 1 | DT105</td>
+                      <td>Bobot SKS</td>
+                      <td colspan="5">4 SKS (2 Teori & 2 Praktikum)</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">Detail Presentase Penilaian</td>
+                      <td rowspan="3">
+                        <ul class="none-bg">
+                          <li>Presensi</li>
+                          <li>Ujian Mid Semester</li>
+                          <li>Ujian Akhir Semester</li>
+                          <li>Tugas Teori</li>
+                          <li>Tugas Praktik</li>
+                          <li>Responsi</li>
+                        </ul>
+                      </td>
+                      <td>
+                        Dosen <br />
+                        pengampu
+                      </td>
+                      <td colspan="5">
+                        <p>Jhon Doe</p>
+                        <p>NIK. 190302315</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Kualifikasi Nilai</td>
+                      <td>>80%</td>
+                      <td>≥60 % 80≤</td>
+                      <td>≥40 % 60≤</td>
+                      <td>≥20 % 40≤</td>
+                      <td><20</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>B</td>
+                      <td>C</td>
+                      <td>D</td>
+                      <td>E</td>
+                    </tr>
+                  </table>
+
+                  <li><b>Gambaran Umum</b></li>
+                  <ol class="roman none-bg outside">
+                    <li>
+                      Perkuliahan ini diselenggarakan 14 kali pertemuan secara
+                      teori dan 14 kali pertemuan secara praktik. Ujian Tengah
+                      Semester dan Ujian Akhir Semester dilakukan secara
+                      sinkronus menggunakan Zoom atau Google Meet dan Asinkronus
+                      menggunakan LMS
+                    </li>
+                    <li>
+                      Mata kuliah ini membahas mengenai bagaimana merancang web,
+                      teknologi web serta perancangan web II termasuk di
+                      dalamnya, yaitu HTML, CSS, PHP, Front-end framework dan
+                      Back-end framework. Pokok pembahasan mata kuliah ini
+                      adalah implementasi bahasa pemrograman HTML, CSS, PHP, dan
+                      Database untuk membangun sebuah Web secara Native maupun
+                      menggunakan Framework.
+                    </li>
+                    <li>
+                      Matakuliah ini merupakan matakuliah konsentrasi., sehingga
+                      setelah menyelesaikan matakuliah ini diharapkan dapat
+                      menjadi Junior web developer
+                    </li>
+                  </ol>
+
+                  <li><b>Capaian Pembelajaran</b></li>
+                  <ol class="roman none-bg outside">
+                    <li>
+                      Mampu menjelaskan definisi perancangan web 2, serta mampu
+                      mengimplementasikan dasar-dasar php.
+                    </li>
+                    <li>
+                      Mampu mengimplementasikan Array dalam php, Percabangan dan
+                      perulangan menggunakan Bahasa pemrograman PHP.
+                    </li>
+                    <li>
+                      Mampu mengimplementasikan konsep OOP (Inheritance,
+                      Override, Overload, Encapsulasi)
+                    </li>
+                    <li>
+                      Mampu mengimplementasikan konsep MVC (Model, View,
+                      Controller).
+                    </li>
+                    <li>
+                      Mampu membuat sebuah web dinamis dengan framework
+                      Codeigniter.
+                    </li>
+                  </ol>
+
+                  <li>
+                    <b
+                      >Prasyarat dan Pengetahuan Awal <i>(Prior Knowlage)</i></b
+                    >
+                  </li>
+                  Matakuliah ini dapat ditempuh dengan syarat sudah menempuh
+                  matakuliah perancangan web I. Sebelum mempelajari perancangan
+                  web II, mahasiswa diharapkan menguasai HTML, CSS, Javascript
+                  terlebih dahulu. Dalam perancangan web II terkait DOM Html dan
+                  penggunaan CSS serta Javascript.
+
+                  <li><b>Unit-Unit Pembelajaran secara Spesifik</b></li>
+                  <table class="table table-bordered fs-6 text">
+                    <tr class="table-info">
+                      <td>Kemampuan Akhir yang Diharapkan</td>
+                      <td>Indikator</td>
+                      <td>Bahan Kajian</td>
+                      <td>Metode Pembelajaran</td>
+                      <td>Waktu</td>
+                      <td>Metode Penilaian</td>
+                      <td>Bahan Ajar</td>
+                    </tr>
+                    <tr>
+                      <td>Menjelaskan konsep dasar website</td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>
+                            Dapat menjelaskan perbedaan web statis dan web
+                            dinamis Dapat menjelaskan perbedaan web statis dan
+                            web dinamis
+                          </li>
+                          <li>
+                            Dapat memberikan contoh web statis dan web dinamis
+                          </li>
+                          <li>
+                            Dapat menjelaskan perbedaan natif programing dan
+                            framework programing
+                          </li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>Kontrak belajar 1 semester</li>
+                          <li>Konsep dasar web</li>
+                        </ul>
+                      </td>
+                      <td>Ceramah, Diskusi,Tanya jawab</td>
+                      <td>Minggu ke-1</td>
+                      <td>Keaktivan mahasiswa</td>
+                      <td>PPT Teori</td>
+                    </tr>
+                    <tr>
+                      <td>Menjelaskan konsep dasar website</td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>
+                            Dapat menjelaskan perbedaan web statis dan web
+                            dinamis Dapat menjelaskan perbedaan web statis dan
+                            web dinamis
+                          </li>
+                          <li>
+                            Dapat memberikan contoh web statis dan web dinamis
+                          </li>
+                          <li>
+                            Dapat menjelaskan perbedaan natif programing dan
+                            framework programing
+                          </li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>Kontrak belajar 1 semester</li>
+                          <li>Konsep dasar web</li>
+                        </ul>
+                      </td>
+                      <td>Ceramah, Diskusi,Tanya jawab</td>
+                      <td>Minggu ke-1</td>
+                      <td>Keaktivan mahasiswa</td>
+                      <td>PPT Teori</td>
+                    </tr>
+                    <tr>
+                      <td>Menjelaskan konsep dasar website</td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>
+                            Dapat menjelaskan perbedaan web statis dan web
+                            dinamis Dapat menjelaskan perbedaan web statis dan
+                            web dinamis
+                          </li>
+                          <li>
+                            Dapat memberikan contoh web statis dan web dinamis
+                          </li>
+                          <li>
+                            Dapat menjelaskan perbedaan natif programing dan
+                            framework programing
+                          </li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>Kontrak belajar 1 semester</li>
+                          <li>Konsep dasar web</li>
+                        </ul>
+                      </td>
+                      <td>Ceramah, Diskusi,Tanya jawab</td>
+                      <td>Minggu ke-1</td>
+                      <td>Keaktivan mahasiswa</td>
+                      <td>PPT Teori</td>
+                    </tr>
+                    <tr>
+                      <td>Menjelaskan konsep dasar website</td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>
+                            Dapat menjelaskan perbedaan web statis dan web
+                            dinamis Dapat menjelaskan perbedaan web statis dan
+                            web dinamis
+                          </li>
+                          <li>
+                            Dapat memberikan contoh web statis dan web dinamis
+                          </li>
+                          <li>
+                            Dapat menjelaskan perbedaan natif programing dan
+                            framework programing
+                          </li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>Kontrak belajar 1 semester</li>
+                          <li>Konsep dasar web</li>
+                        </ul>
+                      </td>
+                      <td>Ceramah, Diskusi,Tanya jawab</td>
+                      <td>Minggu ke-1</td>
+                      <td>Keaktivan mahasiswa</td>
+                      <td>PPT Teori</td>
+                    </tr>
+                    <tr>
+                      <td>Menjelaskan konsep dasar website</td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>
+                            Dapat menjelaskan perbedaan web statis dan web
+                            dinamis Dapat menjelaskan perbedaan web statis dan
+                            web dinamis
+                          </li>
+                          <li>
+                            Dapat memberikan contoh web statis dan web dinamis
+                          </li>
+                          <li>
+                            Dapat menjelaskan perbedaan natif programing dan
+                            framework programing
+                          </li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul class="none-bg">
+                          <li>Kontrak belajar 1 semester</li>
+                          <li>Konsep dasar web</li>
+                        </ul>
+                      </td>
+                      <td>Ceramah, Diskusi,Tanya jawab</td>
+                      <td>Minggu ke-1</td>
+                      <td>Keaktivan mahasiswa</td>
+                      <td>PPT Teori</td>
+                    </tr>
+                  </table>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-warning" id="btnPrint">
+              Print
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="script/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,4 +1,4 @@
 # RPS
 
-udah di up 
+udah di deploy
  https://adhityaizza.github.io/RPS/
