@@ -165,13 +165,14 @@
                   </div>
                 </div>
 
-                <div class="collapse bg-collapse" id="pembelajaranspesifik">
-                  <div class="form-floating form-control text-center" id="formContainer">
-                    <h2>pembelajaran spesifik</h3>
+                <div class="collapse bg-collapse tambah" id="pembelajaranspesifik">
+                  <button id="spesi" class="btn purple" style="margin-bottom: 25px;">Tambah Form</button>
+                  <div class="form-floating form-control text-center">
+                    <h2>pembelajaran spesifik</h2>
                   </div>
                   <div class="form-floating">
-                    <input class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></input>
-                    <label for="floatingTextarea2">Kemampuan Akhir yang di harapkan</label>
+                    <input class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px">
+                    <label for="floatingTextarea2">Kemampuan Akhir yang diharapkan</label>
                   </div>
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
@@ -197,7 +198,85 @@
                     <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
                     <label for="floatingTextarea2">bahan ajar</label>
                   </div>
-                  <button class="btn btn-warning mt-3" onclick="tambahForm()">Tambah Form</button>
+                </div>
+
+                <div class="collapse bg-collapse" id="referensi">
+                  <div class="form-floating form-control text-center">
+                  <h2>Reverensi</h3>
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="referensi" id="floatingTextarea2" style="height: 350px"></textarea>
+                  <label for="floatingTextarea2">Reverensi</label>
+                </div>
+                </div>
+
+                <div class="collapse bg-collapse tambah_tugas" id="tugas">
+                  <button id="tugass" class="btn purple" style="margin-bottom: 25px;">Tambah Form</button>
+                  <div class="form-floating form-control text-center">
+                    <h2>Tugas/Aktivitas dan Penilaian</h2>
+                  </div>
+                  <div class="form-floating">
+                    <input class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px">
+                    <label for="floatingTextarea2">Tugas/Aktivitas</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Kemampuan akhir yang
+                      diharapkan atau dievaluasi</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Waktu</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Bobot</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Kriteria Penilaian</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Indikator Penilaian</label>
+                  </div>
+                </div>
+
+                <div class="collapse bg-collapse tambah_rencana" id="rencana">
+                  <button id="pembelajaran" class="btn purple" style="margin-bottom: 25px;">Tambah Form</button>
+                  <div class="form-floating form-control text-center">
+                    <h2>Rencana Pelaksanaan Pembelajaran</h2>
+                  </div>
+                  <div class="form-floating">
+                    <input class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px">
+                    <label for="floatingTextarea2">Minggu/
+                      pertemuan</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Kemampuan Akhir yang
+                      Diharapkan</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Indikator</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Topik & Sub Topik</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Aktivitas dan Strategi Pembelajaran</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Waktu</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Penilaian</label>
+                  </div>
                 </div>
 
             </div>
@@ -233,35 +312,161 @@
                   <a class="btn btn-warning text-light bottom" data-bs-toggle="collapse" href="#rencana" role="button" aria-expanded="false" aria-controls="rencana">
                     rencana
                   </a>
+                  <a type="button" class="btn purple" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Buat RPS
+                  </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Warning!!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Apakah data yang anda isikan telah benar?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Belum</button>
+              <a href="../index.html"><button type="button" class="btn purple">Sudah</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <script>
-        let formCount = 0; // Jumlah form yang telah ditambahkan
-    
-        function tambahForm() {
-          formCount++; // Menambah jumlah form
-          const formContainer = document.getElementById('formContainer');
-    
-          // Membuat elemen div baru untuk form
-          const div = document.createElement('div');
-          div.classList.add('form-group');
-    
-          // Membuat elemen input baru
-          const input = document.createElement('input');
-          input.classList.add('form-control');
-          input.setAttribute('type', 'text');
-          input.setAttribute('placeholder', 'Form #' + formCount);
-    
-          // Menambahkan input ke dalam div
-          div.appendChild(input);
-    
-          // Menambahkan div ke dalam formContainer
-          formContainer.appendChild(div);
-        }
+      // pembelajaran spesi
+      const spesi = document.getElementById('spesi');
+      spesi.addEventListener('click', function() {
+      const contentToAdd = `
+      <div class="form-floating form-control text-center">
+        <h2>pembelajaran spesifik</h2>
+      </div>
+      <div class="form-floating">
+        <input class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px">
+        <label for="floatingTextarea2">Kemampuan Akhir yang diharapkan</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+        <label for="floatingTextarea2">Indikator</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+        <label for="floatingTextarea2">bahan kajian</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+        <label for="floatingTextarea2">metode pembelajaran</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+        <label for="floatingTextarea2">waktu</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+        <label for="floatingTextarea2">metode penilaian</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+        <label for="floatingTextarea2">bahan ajar</label>
+      </div>
+      `;
+      const newContent = document.createElement('div');
+      newContent.innerHTML = contentToAdd;
+      
+      const tambah = document.querySelector('.tambah');
+      tambah.appendChild(newContent);
+      });
+
+      // tugass
+      const tugass = document.getElementById('tugass');
+      tugass.addEventListener('click', function() {
+      const contentToAdd = `
+      <div class="form-floating form-control text-center">
+                    <h2>Tugas/Aktivitas dan Penilaian</h2>
+                  </div>
+                  <div class="form-floating">
+                    <input class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px">
+                    <label for="floatingTextarea2">Tugas/Aktivitas</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Kemampuan akhir yang
+                      diharapkan atau dievaluasi</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Waktu</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Bobot</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Kriteria Penilaian</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Indikator Penilaian</label>
+                  </div>
+      `;
+      const newContent = document.createElement('div');
+      newContent.innerHTML = contentToAdd;
+
+      const tambah_tugas = document.querySelector('.tambah_tugas');
+      tambah_tugas.appendChild(newContent);
+      });
+
+      // rencana
+      const rencana = document.getElementById('rencana');
+      rencana.addEventListener('click', function() {
+      const contentToAdd = `
+      <div class="form-floating form-control text-center">
+                    <h2>Rencana Pelaksanaan Pembelajaran</h2>
+                  </div>
+                  <div class="form-floating">
+                    <input class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px">
+                    <label for="floatingTextarea2">Minggu/
+                      pertemuan</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Kemampuan Akhir yang
+                      Diharapkan</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Indikator</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Topik & Sub Topik</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Aktivitas dan Strategi Pembelajaran</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Waktu</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="1" id="floatingTextarea2" style="height: 75px"></textarea>
+                    <label for="floatingTextarea2">Penilaian</label>
+                  </div>
+      `;
+      const newContent = document.createElement('div');
+      newContent.innerHTML = contentToAdd;
+
+      const tambah_rencana = document.querySelector('.tambah_rencana');
+      tambah_rencana.appendChild(newContent);
+      });
       </script>
       <script src="../script/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
